@@ -25,6 +25,9 @@
 
 ### in the last section, we illustrate how x2 and x3 differs in density, since x3 contains higher measurement error (e3 has higher variance) , then it shwos the density flatter, while the x2 wth lower standard erorr (lower e2) shows density more normal. 
 
+![image](https://github.com/mshirzad414/Measurement-Error-/assets/140922484/c891c051-5dc9-4589-b684-effbd07de584)
+
+
 
 
 
