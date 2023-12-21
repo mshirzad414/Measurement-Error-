@@ -17,5 +17,14 @@
 ### Model 3: 
 ![image](https://github.com/mshirzad414/Measurement-Error-/assets/140922484/c98cd347-4c5c-4a32-aa6d-82dc4cd118fb)
 
+###The three model above shows that the coefficient of x's in the y model varies, the higher variance or in other word measurement error, the larget the coeffient, theoritically, if control variable contains measurement error, then we observe bias result, the above three models shows that empiricially. 
+
+### Next, we apply IV appraoch to test which x1,x2,and x3 is a good instrument for x in the y model. 
+####below result shows the use of x3 as instrument for x1 
+![image](https://github.com/mshirzad414/Measurement-Error-/assets/140922484/157e8683-ad1d-47bb-9fe2-a11ad9f5b297)
+
+### in the last section, we illustrate how x2 and x3 differs in density, since x3 contains higher measurement error (e3 has higher variance) , then it shwos the density flatter, while the x2 wth lower standard erorr (lower e2) shows density more normal. 
+
+
 
 
