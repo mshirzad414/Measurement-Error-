@@ -4,15 +4,12 @@ library(AER)
 library(lmtest)
 library(ggplot2)
 rm(list = ls())
-#Q1. Conduct simulation for model_1 where x1 = x + e1 where e1 ∼ N (0,0.25)
+#consier the inital model where y=1+0.5x+υ , and x∼N(1,1)andυ∼N(0,1).We can not observe x, but we can observe function of x for three different models: 
+#Simulation for model_1 where x1 = x + e1 where e1 ∼ N (0,0.25)
 set.seed(123)
-# Number of simulations
 num_sim <- 50
-# Number of observations per simulation
 num_obs <- 500
-# Store regression results
 reg_results <- vector("list", length = num_sim)
-# conduct simulations
 for (i in 1:num_sim) {
   x <- rnorm(num_obs, mean = 1, sd = 1)
   v <- rnorm(num_obs, mean = 0, sd = 1)
@@ -101,10 +98,7 @@ coeff_summary_3 <- data.frame(t(coeff_summary_stats_3), row.names = c("Intercept
 print("Summary Statistics for Coefficients and Intercept for Model 3:")
 print(coeff_summary_3)
 
-
-
-
-#Q4. Consider IV regressions of y on to x1.and consider x2 as instrument for x1 
+#Now  Consider IV regressions of y on to x1.and consider x2 as instrument for x1 
 # Store IV regression results
 iv_results <- vector("list", length = num_sim)
 # Conduct simulations
@@ -179,7 +173,7 @@ print(coeff_summary_df_iv)
 
 
 
-#Q6, plot kernel density estimates of both simulated IV estimates in a single plot
+# plot kernel density estimates of both simulated IV estimates in a single plot
 iv_x2 <- coeff_matrix_iv_1[ , "x_1"]
 iv_x3 <- coeff_matrix_iv_2[ , "x_1"]
 df <- data.frame(iv_x2 = c(iv_x2),
